@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Guide to Adapters @ HSHSL</title>
+    <meta name="description" content="Staff guide for identifying the correct digital display adapter.">
+    <meta name="author" content="Brian Zelip">
+    <meta name="keywords" content="digital display adapters">
+    <style>
+      /*! Basscss | http://basscss.com | MIT License */body{margin:0}img{max-width:100%}svg{max-height:100%}fieldset,input,select,textarea{font-family:inherit;font-size:1rem;box-sizing:border-box;margin-top:0;margin-bottom:0}label{vertical-align:middle}input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week]{height:2.25rem;padding:.5rem;vertical-align:middle;-webkit-appearance:none}select{line-height:1.75;padding:.5rem}select:not([multiple]){height:2.25rem;vertical-align:middle}textarea{line-height:1.75;padding:.5rem}table{border-collapse:separate;border-spacing:0;max-width:100%;width:100%}th{text-align:left;font-weight:700}td,th{padding:.25rem 1rem;line-height:inherit}th{vertical-align:bottom}td{vertical-align:top}body{line-height:1.5;font-size:100%}body,h1,h2,h3,h4,h5,h6{font-family:Helvetica Neue,Helvetica,sans-serif}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.25;margin-top:1em;margin-bottom:.5em}dl,ol,p,ul{margin-top:0;margin-bottom:1rem}code,pre,samp{font-family:Source Code Pro,Consolas,monospace;font-size:inherit}pre{margin-top:0;margin-bottom:1rem;overflow-x:scroll}h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}h4{font-size:1rem}h5{font-size:.875rem}h6{font-size:.75rem}body{color:#111;background-color:#fff}a{color:#0074d9;text-decoration:none}a:hover{text-decoration:underline}code,pre{background-color:transparent;border-radius:3px}hr{border:0;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.field{border:1px solid rgba(0,0,0,.125);border-radius:3px}.field.is-focused,.field:focus{outline:none;border-color:#0074d9;box-shadow:0 0 0 2px rgba(0,116,217,.5)}.field.is-disabled,.field:disabled{background-color:rgba(0,0,0,.125);opacity:.5}.field.is-read-only,.field:-moz-read-only:not(select){background-color:rgba(0,0,0,.125)}.field.is-read-only,.field:read-only:not(select){background-color:rgba(0,0,0,.125)}.field.is-success{border-color:#2ecc40}.field.is-success.is-focused,.field.is-success:focus{box-shadow:0 0 0 2px rgba(46,204,64,.5)}.field.is-warning{border-color:#ffdc00}.field.is-warning.is-focused,.field.is-warning:focus{box-shadow:0 0 0 2px rgba(255,220,0,.5)}.field.is-error,.field:invalid{border-color:#ff4136}.field.is-error.is-focused,.field.is-error:focus,.field:invalid.is-focused,.field:invalid:focus{box-shadow:0 0 0 2px rgba(255,65,54,.5)}.table-light td,.table-light th{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(0,0,0,.125)}.table-light tr:last-child td{border-bottom:0}.btn{font-family:inherit;font-size:inherit;font-weight:700;cursor:pointer;display:inline-block;line-height:1.125rem;padding:.5rem 1rem;margin:0;height:auto;border:1px solid transparent;vertical-align:middle;-webkit-appearance:none;color:inherit;background-color:transparent}.btn,.btn:hover{text-decoration:none}.btn:focus{outline:none;border-color:rgba(0,0,0,.125);box-shadow:0 0 0 3px rgba(0,0,0,.25)}::-moz-focus-inner{border:0;padding:0}.btn-primary{color:#fff;background-color:#0074d9;border-radius:3px}.btn-primary:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-primary:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn-primary.is-disabled,.btn-primary:disabled{opacity:.5}.btn-outline,.btn-outline:hover{border-color:currentcolor}.btn-outline{border-radius:3px}.btn-outline:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-outline:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn-outline.is-disabled,.btn-outline:disabled{opacity:.5}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.font-family-inherit{font-family:inherit}.font-size-inherit{font-size:inherit}.text-decoration-none{text-decoration:none}.bold{font-weight:700}.regular{font-weight:400}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.line-height-1{line-height:1}.line-height-2{line-height:1.125}.line-height-3{line-height:1.25}.line-height-4{line-height:1.5}.list-style-none{list-style:none}.underline{text-decoration:underline}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.m3{margin:2rem}.mt3{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.m4{margin:4rem}.mt4{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mxn1{margin-left:-.5rem;margin-right:-.5rem}.mxn2{margin-left:-1rem;margin-right:-1rem}.mxn3{margin-left:-2rem;margin-right:-2rem}.mxn4{margin-left:-4rem;margin-right:-4rem}.mx-auto{margin-left:auto;margin-right:auto}.p0{padding:0}.p1{padding:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.z1{z-index:1}.z2{z-index:2}.z3{z-index:3}.z4{z-index:4}.lg-show,.md-show,.sm-show{display:none!important}@media (min-width:40em){.sm-show{display:block!important}}@media (min-width:52em){.md-show{display:block!important}}@media (min-width:64em){.lg-show{display:block!important}}@media (min-width:40em){.sm-hide{display:none!important}}@media (min-width:52em){.md-hide{display:none!important}}@media (min-width:64em){.lg-hide{display:none!important}}.display-none{display:none!important}.hide{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}.container{max-width:64em;margin-left:auto;margin-right:auto}.col{float:left}.col,.col-right{box-sizing:border-box}.col-right{float:right}.col-1{width:8.33333%}.col-2{width:16.66667%}.col-3{width:25%}.col-4{width:33.33333%}.col-5{width:41.66667%}.col-6{width:50%}.col-7{width:58.33333%}.col-8{width:66.66667%}.col-9{width:75%}.col-10{width:83.33333%}.col-11{width:91.66667%}.col-12{width:100%}@media (min-width:40em){.sm-col{float:left;box-sizing:border-box}.sm-col-right{float:right;box-sizing:border-box}.sm-col-1{width:8.33333%}.sm-col-2{width:16.66667%}.sm-col-3{width:25%}.sm-col-4{width:33.33333%}.sm-col-5{width:41.66667%}.sm-col-6{width:50%}.sm-col-7{width:58.33333%}.sm-col-8{width:66.66667%}.sm-col-9{width:75%}.sm-col-10{width:83.33333%}.sm-col-11{width:91.66667%}.sm-col-12{width:100%}}@media (min-width:52em){.md-col{float:left;box-sizing:border-box}.md-col-right{float:right;box-sizing:border-box}.md-col-1{width:8.33333%}.md-col-2{width:16.66667%}.md-col-3{width:25%}.md-col-4{width:33.33333%}.md-col-5{width:41.66667%}.md-col-6{width:50%}.md-col-7{width:58.33333%}.md-col-8{width:66.66667%}.md-col-9{width:75%}.md-col-10{width:83.33333%}.md-col-11{width:91.66667%}.md-col-12{width:100%}}@media (min-width:64em){.lg-col{float:left;box-sizing:border-box}.lg-col-right{float:right;box-sizing:border-box}.lg-col-1{width:8.33333%}.lg-col-2{width:16.66667%}.lg-col-3{width:25%}.lg-col-4{width:33.33333%}.lg-col-5{width:41.66667%}.lg-col-6{width:50%}.lg-col-7{width:58.33333%}.lg-col-8{width:66.66667%}.lg-col-9{width:75%}.lg-col-10{width:83.33333%}.lg-col-11{width:91.66667%}.lg-col-12{width:100%}}.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.flex-column{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.flex-wrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex-baseline{-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}.flex-stretch{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}.flex-start{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.flex-end{-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}.flex-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.flex-auto{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-grow{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.flex-none{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none}.flex-first{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}.flex-last{-webkit-box-ordinal-group:100000;-webkit-order:99999;-ms-flex-order:99999;order:99999}@media (min-width:40em){.sm-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}.border{border:1px solid rgba(0,0,0,.125)}.border-top{border-top-style:solid;border-top-width:1px;border-top-color:rgba(0,0,0,.125)}.border-right{border-right-style:solid;border-right-width:1px;border-right-color:rgba(0,0,0,.125)}.border-bottom{border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.border-left{border-left-style:solid;border-left-width:1px;border-left-color:rgba(0,0,0,.125)}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.rounded-top{border-radius:3px 3px 0 0}.rounded-right{border-radius:0 3px 3px 0}.rounded-bottom{border-radius:0 0 3px 3px}.rounded-left{border-radius:3px 0 0 3px}.not-rounded{border-radius:0}.black{color:#111}.gray{color:#aaa}.silver{color:#ddd}.white{color:#fff}.aqua{color:#7fdbff}.blue{color:#0074d9}.navy{color:#001f3f}.teal{color:#39cccc}.green{color:#2ecc40}.olive{color:#3d9970}.lime{color:#01ff70}.yellow{color:#ffdc00}.orange{color:#ff851b}.red{color:#ff4136}.fuchsia{color:#f012be}.purple{color:#b10dc9}.maroon{color:#85144b}.color-inherit{color:inherit}.muted{opacity:.5}.bg-black{background-color:#111}.bg-gray{background-color:#aaa}.bg-silver{background-color:#ddd}.bg-white{background-color:#fff}.bg-aqua{background-color:#7fdbff}.bg-blue{background-color:#0074d9}.bg-navy{background-color:#001f3f}.bg-teal{background-color:#39cccc}.bg-green{background-color:#2ecc40}.bg-olive{background-color:#3d9970}.bg-lime{background-color:#01ff70}.bg-yellow{background-color:#ffdc00}.bg-orange{background-color:#ff851b}.bg-red{background-color:#ff4136}.bg-fuchsia{background-color:#f012be}.bg-purple{background-color:#b10dc9}.bg-maroon{background-color:#85144b}.bg-darken-1{background-color:rgba(0,0,0,.0625)}.bg-darken-2{background-color:rgba(0,0,0,.125)}.bg-darken-3{background-color:rgba(0,0,0,.25)}.bg-darken-4{background-color:rgba(0,0,0,.5)}.bg-lighten-1{background-color:hsla(0,0%,100%,.0625)}.bg-lighten-2{background-color:hsla(0,0%,100%,.125)}.bg-lighten-3{background-color:hsla(0,0%,100%,.25)}.bg-lighten-4{background-color:hsla(0,0%,100%,.5)}
+    </style>
+    <script>
+      var data = [
+        {
+          "id":1,
+          "name":"Apple 30-pin male to VGA female",
+          "mainPurpose":"For connecting older iPhones and iPads to VGA display.",
+          "end1Desc":"30-pin male plugs into iPhone or iPad.",
+          "end2Desc":"VGA female accepts cable with VGA male that is also plugged into a display device.",
+          "notes":"",
+          "imageTop":"img/id1Top.jpg",
+          "imageEnd1":"img/id1End1.jpg",
+          "imageEnd2":"img/id1End2.jpg",
+          "quantityCATS":1,
+          "quantityInfoServ":0
+        },
+        {
+          "id":2,
+          "name":"Apple Lightning Digital AV male to HDMI female, plus Lightning female",
+          "mainPurpose":"Connect iPhone or iPad to an HDMI display.",
+          "end1Desc":"Lightning male plugs into iPhone or iPad.",
+          "end2Desc":"HDMI female accepts a cable with a HDMI male that is also plugged into a display device.",
+          "notes":"Lightning female accepts male from the Apple device's battery.",
+          "imageTop":"img/id2Top.jpg",
+          "imageEnd1":"img/id2End1.jpg",
+          "imageEnd2":"img/id2End2.jpg",
+          "quantityCATS":6,
+          "quantityInfoServ":0
+        },
+        {
+          "id":3,
+          "name":"Apple MiniDisplay male to HDMI female",
+          "mainPurpose":"Connect Apple laptop with MiniDisplay Port to an HDMI display.",
+          "end1Desc":"MiniDisplay male plugs into laptop's MiniDisplay Port.",
+          "end2Desc":"HDMI female accepts a cable with a HDMI male that is also plugged into a display device.",
+          "notes":"",
+          "imageTop":"img/id3Top.jpg",
+          "imageEnd1":"img/id3End1.jpg",
+          "imageEnd2":"img/id3End2.jpg",
+          "quantityCATS":1,
+          "quantityInfoServ":5
+        },
+        {
+          "id":4,
+          "name":"HDMI male to HDMI male extension cord",
+          "mainPurpose":"Reach long distance between HDMI device and a HDMI display.",
+          "end1Desc":"HDMI male plugs into a computer's HDMI port.",
+          "end2Desc":"HDMI male plugs into a display's HDMI port.",
+          "notes":"",
+          "imageTop":"img/id4Top.jpg",
+          "imageEnd1":"img/id4End1.jpg",
+          "imageEnd2":"img/id4End2.jpg",
+          "quantityCATS":0,
+          "quantityInfoServ":1
+        },
+        {
+          "id":5,
+          "name":"HDMI male to VGA female, plus Micro USB male to USB male",
+          "mainPurpose":"For connecting devices with HDMI output to a VGA-only display.",
+          "end1Desc":"HDMI male plugs into a computer.",
+          "end2Desc":"VGA female connects to a display.",
+          "notes":"For power, the Micro USB plugs into the adapter and the USB plugs into the device.",
+          "imageTop":"img/id5Top.jpg",
+          "imageEnd1":"img/id5MultiEnds.jpg",
+          "imageEnd2":"",
+          "quantityCATS":1,
+          "quantityInfoServ":0
+        },
+        {
+          "id":6,
+          "name":"Micro HDMI male to HDMI female (2 inches)",
+          "mainPurpose":"Connect Android phones and tablets to a HDMI display.",
+          "end1Desc":"Micro HDMI male plugs into an Android phone or tablet.",
+          "end2Desc":"HDMI female accepts a cable with a HDMI male that is also plugged into a display device.",
+          "notes":"",
+          "imageTop":"img/id6Top.jpg",
+          "imageEnd1":"img/id6End1.jpg",
+          "imageEnd2":"img/id6End2.jpg",
+          "quantityCATS":0,
+          "quantityInfoServ":1
+        },
+        {
+          "id":7,
+          "name":"Micro HDMI male to HDMI female (six inches)",
+          "mainPurpose":"Connect Android phones and tablets to a HDMI display.",
+          "end1Desc":"Micro HDMI male plugs into an Android phone or tablet.",
+          "end2Desc":"HDMI female accepts a cable with a HDMI male that is also plugged into a display device.",
+          "notes":"",
+          "imageTop":"img/id7Top.jpg",
+          "imageEnd1":"img/id7End1.jpg",
+          "imageEnd2":"img/id7End2.jpg",
+          "quantityCATS":2,
+          "quantityInfoServ":0
+        },
+        {
+          "id":8,
+          "name":"VGA male to HDMI female, plus 1/8 inch audio jack, plus Micro USB male to USB male",
+          "mainPurpose":"Connect devices with VGA output to HDMI display input.",
+          "end1Desc":"VGA male plugs into device with VGA output.",
+          "end2Desc":"HDMI female connects to HDMI port on a display.",
+          "notes":"For power, the Micro USB plugs into the adapter and the USB plugs into the device. For audio, the 1/8 inch audio jack plugs into the device's audio output.",
+          "imageTop":"img/id8Top.jpg",
+          "imageEnd1":"img/id8MultiEnds.jpg",
+          "imageEnd2":"",
+          "quantityCATS":0,
+          "quantityInfoServ":11
+        }
+      ]
+    </script>
+  </head>
+
+  <body class="p2">
+
+    <div class="container clearfix">
+      <h1 class="center">HSHSL Adapters Guide</h1>
+      <nav class="py3">
+        <ol id="links"></ol>
+      </nav>
+      <div id="adapterList"></div>
+    </div>
+
+    <script>
+      for (i=0; i<data.length; i++) {
+        links.innerHTML = links.innerHTML + '<li><a href="#' + data[i].id + '">' + data[i].name + '</a></li>';
+        if (data[i].imageEnd2 != '' && data[i].notes == '') {
+          adapterList.innerHTML = adapterList.innerHTML +
+          '<div class="clearfix mxn2"><div class="col col-6 p2"><h2 id="' + data[i].id + '" class="mt0">' + data[i].name + '</h2><p class="h3">' + data[i].mainPurpose + '<ul><li>' + data[i].end1Desc + '</li><li>' + data[i].end2Desc + '</li></ul><p class="bold">Available quantity at Info Services desk: ' + data[i].quantityInfoServ + '</p><p class="bold">Available quantity at CATS: ' + data[i].quantityCATS + '</p></div><div class="col col-6 p2"><img src="'+ data[i].imageTop +
+          '"></div></div><div class="clearfix mxn2"><div class="col col-6 p2"><img src="' + data[i].imageEnd1 +
+          '"></div><div class="col col-6 p2"><img src="' + data[i].imageEnd2 +
+          '"></div></div><hr class="mt4 mb4" style="color: black; background-color: black; height: 5px;">'
+        } else if (data[i].imageEnd2 != '' && data[i].notes != '') {
+          adapterList.innerHTML = adapterList.innerHTML +
+          '<div class="clearfix mxn2"><div class="col col-6 p2"><h2 id="' + data[i].id + '" class="mt0">' + data[i].name + '</h2><p class="h3">' + data[i].mainPurpose + '<ul><li>' + data[i].end1Desc + '</li><li>' + data[i].end2Desc + '</li><li>' + data[i].notes + '</li></ul><p class="bold">Available quantity at Info Services desk: ' + data[i].quantityInfoServ + '</p><p class="bold">Available quantity at CATS: ' + data[i].quantityCATS + '</p></div><div class="col col-6 p2"><img src="'+ data[i].imageTop +
+          '"></div></div><div class="clearfix mxn2"><div class="col col-6 p2"><img src="' + data[i].imageEnd1 +
+          '"></div><div class="col col-6 p2"><img src="' + data[i].imageEnd2 +
+          '"></div></div><hr class="mt4 mb4" style="color: black; background-color: black; height: 5px;">'
+        } else if (data[i].imageEnd2 == '' && data[i].notes == '') {
+          adapterList.innerHTML = adapterList.innerHTML +
+          '<div class="clearfix mxn2"><div class="col col-6 p2"><h2 id="' + data[i].id + '" class="mt0">' + data[i].name + '</h2><p class="h3">' + data[i].mainPurpose + '<ul><li>' + data[i].end1Desc + '</li><li>' + data[i].end2Desc + '</li></ul><p class="bold">Available quantity at Info Services desk: ' + data[i].quantityInfoServ + '</p><p class="bold">Available quantity at CATS: ' + data[i].quantityCATS + '</p></div><div class="col col-6 p2"><img src="'+ data[i].imageTop +
+          '"></div></div><div class="clearfix mxn2"><div class="col col-6 p2"><img src="' + data[i].imageEnd1 +
+          '"></div><div class="col col-6 p2"></div></div><hr class="mt4 mb4" style="color: black; background-color: black; height: 5px;">'
+        } else if (data[i].imageEnd2 == '' && data[i].notes != '') {
+          adapterList.innerHTML = adapterList.innerHTML +
+          '<div class="clearfix mxn2"><div class="col col-6 p2"><h2 id="' + data[i].id + '" class="mt0">' + data[i].name + '</h2><p class="h3">' + data[i].mainPurpose + '<ul><li>' + data[i].end1Desc + '</li><li>' + data[i].end2Desc + '</li><li>' + data[i].notes + '</li></ul><p class="bold">Available quantity at Info Services desk: ' + data[i].quantityInfoServ + '</p><p class="bold">Available quantity at CATS: ' + data[i].quantityCATS + '</p></div><div class="col col-6 p2"><img src="'+ data[i].imageTop +
+          '"></div></div><div class="clearfix mxn2"><div class="col col-6 p2"><img src="' + data[i].imageEnd1 +
+          '"></div><div class="col col-6 p2"></div></div><hr class="mt4 mb4" style="color: black; background-color: black; height: 5px;">'
+        }
+      }
+    </script>
+
+  </body>
+
+</html>
